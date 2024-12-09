@@ -8,6 +8,19 @@ body {
     color: #333;
 }
 
+/* Herencia en CSS */
+.herencia {
+    color: #0073e6; /* Cambiado a un color azul para el ejemplo */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+div p {
+    color: #ff6600; /* Cambiado a un color naranja para el texto en div */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
 /* Header */
 header {
     background-color: #004d66;
