@@ -72,7 +72,7 @@ main {
     gap: 20px;
 }
 
-.flex-item {;
+.flex-item {
     background-color: #e6f7ff;
     border: 1px solid #b3e0ff;
     border-radius: 10px;
