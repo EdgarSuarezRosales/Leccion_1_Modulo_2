@@ -10,13 +10,13 @@ body {
 
 /* Herencia en CSS */
 .herencia {
-    color: #0073e6; /* Cambiado a un color azul para el ejemplo */
+    color: #004891; /* Cambiado a un color azul para el ejemplo */
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
 div p {
-    color: #ff6600; /* Cambiado a un color naranja para el texto en div */
+    color: #ff0000; /* Cambiado a un color rojo para el texto en div */
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
