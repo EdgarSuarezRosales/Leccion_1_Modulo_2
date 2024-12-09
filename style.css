@@ -10,13 +10,13 @@ body {
 
 /* Herencia en CSS */
 .herencia {
-    color: #004891; /* Cambiado a un color azul para el ejemplo */
+    color: #004891;
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
 div p {
-    color: #ff0000; /* Cambiado a un color rojo para el texto en div */
+    color: #020000;
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
@@ -27,19 +27,6 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-header h2 {
-    margin: 10px 0;
-}
-
-header p {
-    font-size: 1em;
 }
 
 /* Nav */
@@ -73,21 +60,46 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-main h2 {
+/* Flexbox Section */
+#flexbox-section {
+    margin-top: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.flex-item {;
+    background-color: #e6f7ff;
+    border: 1px solid #b3e0ff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.flex-item h3 {
     color: #004d66;
-    margin-top: 0;
 }
 
-main ul {
-    list-style: disc;
-    margin-left: 20px;
+/* Responsiveness */
+@media (max-width: 768px) {
+    .flex-item {
+        flex: 1 1 calc(45% - 20px);
+        max-width: calc(45% - 20px);
+    }
 }
 
-main img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
+@media (max-width: 480px) {
+    .flex-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
 
 /* Formulario */
