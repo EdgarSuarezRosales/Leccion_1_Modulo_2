@@ -1,3 +1,41 @@
+/* Barra de navegación principal */
+.primary-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que la barra esté encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #0d055a;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px solid #003d52;
+}
+
+.primary-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.primary-nav ul li {
+    margin: 0;
+}
+
+.primary-nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
 /* Estilo general */
 body {
     font-family: Arial, sans-serif;
@@ -50,6 +88,38 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Nueva barra de navegación secundaria */
+.secondary-nav {
+    background-color: #e6f7ff;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #b3e0ff;
+    border-radius: 5px;
+}
+
+.secondary-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.secondary-nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.secondary-nav ul li a {
+    color: #004d66;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.secondary-nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Fin de la barra de navegación secundaria */
+
 /* Main */
 main {
     padding: 20px;
@@ -59,6 +129,27 @@ main {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Apartado de galería de imágenes */
+.image-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #004d66;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.image-links a:hover {
+    background-color: #003d52;
+}
+/* Fin del apartado de galería de imágenes */
 
 /* Flexbox Section */
 #flexbox-section {
